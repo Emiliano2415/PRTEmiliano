@@ -1,6 +1,8 @@
 'use client'
 import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
+import { ArrowRight, Download } from 'lucide-react'
 
 export default function Hero() {
   const t = useTranslations('hero')
@@ -20,11 +22,11 @@ export default function Hero() {
           <p className="text-slate-300 text-xl mb-3">{t('title')}</p>
           <p className="text-slate-500 mb-8">{t('subtitle')}</p>
           <div className="flex gap-4 flex-wrap">
-            <a href="#projects" className="px-6 py-3 bg-purple-600 hover:bg-purple-500 rounded-lg font-medium transition-all">
-              {t('cta_projects')}
+            <a href="#projects" className="flex items-center gap-2 px-6 py-3 bg-purple-600 hover:bg-purple-500 rounded-lg font-medium transition-all">
+              {t('cta_projects')} <ArrowRight className="w-4 h-4" />
             </a>
-            <a href="/cv_emiliano_arcos.pdf" download className="px-6 py-3 border border-white/10 hover:border-purple-500/40 rounded-lg font-medium transition-all text-slate-300">
-              {t('cta_cv')}
+            <a href="/cv_emiliano_arcos.pdf" download className="flex items-center gap-2 px-6 py-3 border border-white/10 hover:border-purple-500/40 rounded-lg font-medium transition-all text-slate-300">
+              {t('cta_cv')} <Download className="w-4 h-4" />
             </a>
           </div>
         </motion.div>
@@ -36,8 +38,14 @@ export default function Hero() {
         >
           <div className="relative w-64 h-64 md:w-80 md:h-80">
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-600/30 to-cyan-400/30 blur-2xl" />
-            <div className="relative z-10 w-full h-full rounded-full border-4 border-purple-600/20 overflow-hidden bg-[#12121a] flex items-center justify-center">
-              <span className="text-8xl">👤</span>
+            <div className="relative z-10 w-full h-full rounded-full border-4 border-purple-600/20 overflow-hidden">
+              <Image
+                src="/images/profile_photo_circular.png"
+                alt="Emiliano Arcos"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
         </motion.div>

@@ -2,6 +2,7 @@
 import { useTranslations } from 'next-intl'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { GraduationCap } from 'lucide-react'
 
 export default function Education() {
   const t = useTranslations('education')
@@ -23,8 +24,8 @@ export default function Education() {
           className="p-8 rounded-2xl bg-[#12121a] border border-white/5 max-w-2xl"
         >
           <div className="flex items-start gap-4">
-            <div className="w-12 h-12 rounded-xl bg-purple-600/20 flex items-center justify-center flex-shrink-0 text-xl">
-              🎓
+            <div className="w-12 h-12 rounded-xl bg-purple-600/20 flex items-center justify-center flex-shrink-0">
+              <GraduationCap className="w-6 h-6 text-purple-400" />
             </div>
             <div>
               <h3 className="font-bold text-xl text-white mb-1" style={{ fontFamily: 'var(--font-space-grotesk)' }}>

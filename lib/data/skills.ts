@@ -1,22 +1,28 @@
-export const skillCategories = [
+export type SkillCategory = {
+  name: string
+  iconName: 'Zap' | 'Globe' | 'BarChart2' | 'MessageSquare'
+  skills: string[]
+}
+
+export const skillCategories: SkillCategory[] = [
   {
     name: 'Programming & Automation',
-    icon: '⚡',
+    iconName: 'Zap',
     skills: ['Python', 'Pandas', 'Scripting', 'Git'],
   },
   {
     name: 'Web Development',
-    icon: '🌐',
+    iconName: 'Globe',
     skills: ['React', 'Next.js', 'HTML/CSS', 'Flask', 'REST APIs'],
   },
   {
     name: 'Data & Analysis',
-    icon: '📊',
+    iconName: 'BarChart2',
     skills: ['SQL', 'Excel', 'Database Management', 'Data Cleaning'],
   },
   {
     name: 'Languages',
-    icon: '💬',
+    iconName: 'MessageSquare',
     skills: ['Spanish (Native)', 'English (B2)'],
   },
 ]
