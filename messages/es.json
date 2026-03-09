@@ -1,0 +1,42 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "education": "Educación",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Emiliano Arcos",
+    "title": "Ingeniería Industrial y de Sistemas",
+    "subtitle": "Automatización · Desarrollo Web · Análisis de Datos",
+    "cta_projects": "Ver proyectos",
+    "cta_cv": "Descargar CV"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Estudiante de Ingeniería Industrial y de Sistemas en la UAT con experiencia práctica en automatización de procesos, manipulación de datos y desarrollo de dashboards web. Apasionado por resolver problemas con código limpio y eficiente.",
+    "stats": {
+      "projects": "Proyectos",
+      "technologies": "Tecnologías",
+      "university": "Universidad"
+    }
+  },
+  "skills": { "title": "Habilidades" },
+  "projects": { "title": "Proyectos", "view_code": "Ver código", "view_demo": "Demo" },
+  "experience": { "title": "Experiencia" },
+  "education": { "title": "Educación", "expected": "Esperada" },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Tienes un proyecto en mente? Hablemos.",
+    "name": "Nombre",
+    "email": "Correo",
+    "message": "Mensaje",
+    "send": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado correctamente!",
+    "error": "Error al enviar. Intenta de nuevo."
+  }
+}

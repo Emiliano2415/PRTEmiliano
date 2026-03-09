@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "permissions": {
     "allow": [
       "Bash(npm run build)",
@@ -8,4 +9,7 @@
       "mcp__plugin_Notion_notion__notion-search"
     ]
   }
+=======
+  "outputStyle": "default"
+>>>>>>> abe2485d7d9ae8a8240002d45698b8cd30ab5fb6
 }
