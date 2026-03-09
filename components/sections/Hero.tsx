@@ -1,8 +1,8 @@
 'use client'
 import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import { ArrowDownRight, FileText } from 'lucide-react'
+import AvatarSVG from '@/components/ui/AvatarSVG'
 
 const DELAY_BASE = 3.5 // after intro finishes
 
@@ -152,7 +152,7 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* Right: photo */}
+          {/* Right: avatar */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9, x: 20 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
@@ -160,7 +160,7 @@ export default function Hero() {
             className="flex justify-center lg:justify-end"
           >
             <div className="relative">
-              {/* Glow behind photo */}
+              {/* Glow behind avatar */}
               <div
                 style={{
                   position: 'absolute',
@@ -187,24 +187,7 @@ export default function Hero() {
                   border: '1px dashed rgba(103,232,249,0.1)',
                 }}
               />
-              {/* Photo */}
-              <div
-                className="relative overflow-hidden"
-                style={{
-                  width: 'clamp(200px, 22vw, 280px)',
-                  height: 'clamp(200px, 22vw, 280px)',
-                  borderRadius: '50%',
-                  border: '2px solid rgba(109,40,217,0.35)',
-                }}
-              >
-                <Image
-                  src="/images/profile_photo_circular.png"
-                  alt="Emiliano Arcos"
-                  fill
-                  className="object-cover"
-                  priority
-                />
-              </div>
+              <AvatarSVG />
             </div>
           </motion.div>
         </div>

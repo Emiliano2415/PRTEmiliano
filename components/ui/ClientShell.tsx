@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import IntroAnimation from './IntroAnimation'
 import CustomCursor from './CustomCursor'
+import FloatingParticles from './FloatingParticles'
 
 export default function ClientShell({ children }: { children: React.ReactNode }) {
   const [introDone, setIntroDone] = useState(false)
@@ -9,6 +10,7 @@ export default function ClientShell({ children }: { children: React.ReactNode })
   return (
     <>
       <CustomCursor />
+      <FloatingParticles />
       <div className="mesh-bg" />
       <IntroAnimation onComplete={() => setIntroDone(true)} />
       <div

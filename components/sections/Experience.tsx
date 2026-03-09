@@ -2,12 +2,24 @@
 import { useTranslations, useLocale } from 'next-intl'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { ExternalLink } from 'lucide-react'
 
 const experiences = [
+  {
+    role: { es: 'Desarrollador Full-Stack', en: 'Full-Stack Developer' },
+    company: 'E-Portal',
+    period: '2024',
+    link: 'https://cursomatematicas.onrender.com/',
+    description: {
+      es: 'Desarrollo de plataforma web educativa con dashboard administrativo, búsqueda dinámica, paginación y CRUD completo para gestión de usuarios y registros.',
+      en: 'Development of an educational web platform featuring an admin dashboard, dynamic search, pagination, and full CRUD for user and record management.',
+    },
+  },
   {
     role: { es: 'Desarrollador Freelance', en: 'Freelance Developer' },
     company: 'Cliente — Sector Geológico',
     period: '2024',
+    link: null,
     description: {
       es: 'Diseño y desarrollo de portafolio digital personalizado para cliente del sector geológico.',
       en: 'Design and development of a custom digital portfolio for a geology sector client.',
@@ -17,6 +29,7 @@ const experiences = [
     role: { es: 'Automatización de Datos', en: 'Data Automation' },
     company: 'Proyecto Personal',
     period: '2023 — 2024',
+    link: null,
     description: {
       es: 'Scripts Python con Pandas para automatizar reportes de asistencia, reduciendo el tiempo manual en 80%.',
       en: 'Python scripts with Pandas to automate attendance reports, reducing manual time by 80%.',
@@ -90,9 +103,24 @@ export default function Experience() {
                       {exp.period}
                     </span>
                   </div>
-                  <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '0.78rem', color: 'rgba(167,139,250,0.7)', marginBottom: '0.75rem', letterSpacing: '0.02em' }}>
-                    {exp.company}
-                  </p>
+                  <div className="flex items-center gap-2 mb-3">
+                    <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '0.78rem', color: 'rgba(167,139,250,0.7)', letterSpacing: '0.02em' }}>
+                      {exp.company}
+                    </p>
+                    {exp.link && (
+                      <a
+                        href={exp.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        data-hover
+                        className="flex items-center gap-1 transition-opacity hover:opacity-100 opacity-60"
+                        style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '0.65rem', color: '#67e8f9', textDecoration: 'none' }}
+                      >
+                        <ExternalLink className="w-3 h-3" />
+                        Ver proyecto
+                      </a>
+                    )}
+                  </div>
                   <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '0.875rem', color: 'rgba(232,232,240,0.5)', lineHeight: 1.65 }}>
                     {exp.description[locale as 'es' | 'en']}
                   </p>

@@ -10,14 +10,14 @@ export const projects = [
     demo: '',
   },
   {
-    title: 'Cursomatematicas — Admin Dashboard',
+    title: 'E-Portal — Admin Dashboard',
     description: {
-      es: 'Dashboard administrativo full-stack con React y Flask. Incluye paginación, filtros dinámicos y CRUD completo para gestión de usuarios.',
-      en: 'Full-stack admin dashboard with React and Flask. Features pagination, dynamic search filters, and full CRUD capabilities for user management.',
+      es: 'Plataforma educativa full-stack con dashboard administrativo. React + Flask con paginación, filtros dinámicos y CRUD completo para gestión de usuarios y registros.',
+      en: 'Full-stack educational platform with admin dashboard. React + Flask with pagination, dynamic search filters, and full CRUD for user and record management.',
     },
     tags: ['React', 'Flask', 'CRUD', 'Dashboard'],
     github: 'https://github.com/Emiliano2415',
-    demo: '',
+    demo: 'https://cursomatematicas.onrender.com/',
   },
   {
     title: 'Digital Portfolio — Geology Sector',

@@ -144,41 +144,16 @@ body::before {
   box-shadow: 0 0 40px rgba(8, 145, 178, 0.15), 0 0 80px rgba(8, 145, 178, 0.05);
 }
 
-/* ── Animated gradient mesh background ─────────── */
+/* ── Static gradient mesh background ───────────── */
 .mesh-bg {
   position: fixed;
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(ellipse 80% 50% at 20% 10%, rgba(109, 40, 217, 0.08) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(8, 145, 178, 0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 50% at 20% 10%, rgba(109, 40, 217, 0.09) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(8, 145, 178, 0.08) 0%, transparent 60%),
     radial-gradient(ellipse 40% 60% at 60% 30%, rgba(167, 139, 250, 0.04) 0%, transparent 50%),
     #050508;
-  animation: meshShift 20s ease-in-out infinite alternate;
-}
-
-@keyframes meshShift {
-  0% {
-    background:
-      radial-gradient(ellipse 80% 50% at 20% 10%, rgba(109, 40, 217, 0.08) 0%, transparent 60%),
-      radial-gradient(ellipse 60% 40% at 80% 80%, rgba(8, 145, 178, 0.07) 0%, transparent 60%),
-      radial-gradient(ellipse 40% 60% at 60% 30%, rgba(167, 139, 250, 0.04) 0%, transparent 50%),
-      #050508;
-  }
-  50% {
-    background:
-      radial-gradient(ellipse 70% 60% at 70% 20%, rgba(109, 40, 217, 0.1) 0%, transparent 60%),
-      radial-gradient(ellipse 80% 50% at 20% 90%, rgba(8, 145, 178, 0.08) 0%, transparent 60%),
-      radial-gradient(ellipse 50% 40% at 40% 60%, rgba(167, 139, 250, 0.05) 0%, transparent 50%),
-      #050508;
-  }
-  100% {
-    background:
-      radial-gradient(ellipse 60% 70% at 40% 5%, rgba(109, 40, 217, 0.07) 0%, transparent 60%),
-      radial-gradient(ellipse 70% 60% at 90% 50%, rgba(8, 145, 178, 0.09) 0%, transparent 60%),
-      radial-gradient(ellipse 45% 55% at 10% 70%, rgba(167, 139, 250, 0.05) 0%, transparent 50%),
-      #050508;
-  }
 }
 
 /* ── Section header style ──────────────────────── */
