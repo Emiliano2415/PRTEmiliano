@@ -1,11 +1,8 @@
 import type { Metadata } from 'next'
-import { Space_Grotesk, Inter } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import '../globals.css'
-
-const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space-grotesk' })
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+import ClientShell from '@/components/ui/ClientShell'
 
 export const metadata: Metadata = {
   title: 'Emiliano Arcos — Portfolio',
@@ -22,10 +19,12 @@ export default async function LocaleLayout({
   const { locale } = await params
   const messages = await getMessages()
   return (
-    <html lang={locale} className={`${spaceGrotesk.variable} ${inter.variable}`}>
-      <body className="bg-[#0a0a0f] text-slate-100 antialiased">
+    <html lang={locale}>
+      <body className="bg-[#050508] text-[#e8e8f0] antialiased">
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <ClientShell>
+            {children}
+          </ClientShell>
         </NextIntlClientProvider>
       </body>
     </html>
