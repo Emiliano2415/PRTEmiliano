@@ -1,0 +1,77 @@
+[    4134ms] [ERROR] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/es" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/es" tree={[...]} params={{locale:"es"}} cacheNode={{...}} ...>
+                        <SegmentViewNode type="layout" pagePath="/OneDrive/...">
+                          <SegmentTrieNode>
+                          <script>
+                          <script>
+                          <script>
+                          <LocaleLayout>
+                            <html
++                             lang="es"
+-                             lang="en"
+                            >
+                              <body
++                               className="bg-[#050508] text-[#e8e8f0] antialiased"
+-                               className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG_..."
+                              >
+                      ...
+          ...
+ @ http://localhost:3000/_next/static/chunks/a3375_next_dist_185d46ee._.js:3127
+[    4164ms] [WARNING] Image with src "/images/profile_photo_circular.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:3000/_next/static/chunks/a3375_next_dist_185d46ee._.js:2297
+[   39194ms] [ERROR] In HTML, %s cannot be a child of <%s>.%s
+This will cause a hydration error.%s <html> body  
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:"/es", ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/en" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/OneDrive/...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+>                         <body
+>                           className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+>                         >
+                            ...
+                              <SegmentViewNode type="layout" pagePath="/OneDrive/...">
+                                <SegmentTrieNode>
+                                <script>
+                                <script>
+                                <script>
+                                <LocaleLayout>
+>                                 <html lang="en">
+                  ...
+ @ http://localhost:3000/_next/static/chunks/a3375_next_dist_185d46ee._.js:3127
+[   39194ms] [ERROR] <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. body <html> @ http://localhost:3000/_next/static/chunks/a3375_next_dist_185d46ee._.js:3127
+[   39213ms] [WARNING] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior @ http://localhost:3000/_next/static/chunks/a3375_next_dist_185d46ee._.js:2297

@@ -1,0 +1,235 @@
+[     633ms] [ERROR] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/es" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/es" tree={[...]} params={{locale:"es"}} cacheNode={{...}} ...>
+                        <SegmentViewNode type="layout" pagePath="/OneDrive/...">
+                          <SegmentTrieNode>
+                          <script>
+                          <script>
+                          <script>
+                          <LocaleLayout>
+                            <html
++                             lang="es"
+-                             lang="en"
+                            >
+                              <body
++                               className="bg-[#050508] text-[#e8e8f0] antialiased"
+-                               className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG_..."
+                              >
+                      ...
+          ...
+ @ http://localhost:3000/_next/static/chunks/a3375_next_dist_185d46ee._.js:3127
+[     671ms] [WARNING] Image with src "/images/profile_photo_circular.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:3000/_next/static/chunks/a3375_next_dist_185d46ee._.js:2297
+[  100461ms] [ERROR] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/es" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/es" tree={[...]} params={{locale:"es"}} cacheNode={{...}} ...>
+                        <SegmentViewNode type="layout" pagePath="/OneDrive/...">
+                          <SegmentTrieNode>
+                          <script>
+                          <script>
+                          <script>
+                          <LocaleLayout>
+                            <html
++                             lang="es"
+-                             lang="en"
+                            >
+                              <body
++                               className="bg-[#050508] text-[#e8e8f0] antialiased"
+-                               className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG_..."
+                              >
+                      ...
+          ...
+ @ http://localhost:3000/_next/static/chunks/a3375_next_dist_185d46ee._.js:3127
+[  100482ms] [WARNING] Image with src "/images/profile_photo_circular.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:3000/_next/static/chunks/a3375_next_dist_185d46ee._.js:2297
+[  107447ms] [ERROR] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/es" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/es" tree={[...]} params={{locale:"es"}} cacheNode={{...}} ...>
+                        <SegmentViewNode type="layout" pagePath="/OneDrive/...">
+                          <SegmentTrieNode>
+                          <script>
+                          <script>
+                          <script>
+                          <LocaleLayout>
+                            <html
++                             lang="es"
+-                             lang="en"
+                            >
+                              <body
++                               className="bg-[#050508] text-[#e8e8f0] antialiased"
+-                               className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG_..."
+                              >
+                      ...
+          ...
+ @ http://localhost:3000/_next/static/chunks/a3375_next_dist_185d46ee._.js:3127
+[  107466ms] [WARNING] Image with src "/images/profile_photo_circular.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:3000/_next/static/chunks/a3375_next_dist_185d46ee._.js:2297
+[  534032ms] [ERROR] In HTML, %s cannot be a child of <%s>.%s
+This will cause a hydration error.%s <html> body  
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:"/es", ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/en" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/OneDrive/...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+>                         <body
+>                           className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+>                         >
+                            ...
+                              <SegmentViewNode type="layout" pagePath="/OneDrive/...">
+                                <SegmentTrieNode>
+                                <script>
+                                <script>
+                                <script>
+                                <LocaleLayout>
+>                                 <html lang="en">
+                  ...
+ @ http://localhost:3000/_next/static/chunks/a3375_next_dist_185d46ee._.js:3127
+[  534033ms] [ERROR] <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. body <html> @ http://localhost:3000/_next/static/chunks/a3375_next_dist_185d46ee._.js:3127
+[  534045ms] [WARNING] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior @ http://localhost:3000/_next/static/chunks/a3375_next_dist_185d46ee._.js:2297
+[  623674ms] [ERROR] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/en" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/en" tree={[...]} params={{locale:"en"}} cacheNode={{...}} ...>
+                        <SegmentViewNode type="layout" pagePath="/OneDrive/...">
+                          <SegmentTrieNode>
+                          <script>
+                          <script>
+                          <script>
+                          <LocaleLayout>
+                            <html
++                             lang="en"
+-                             lang="es"
+                            >
+                      ...
+          ...
+ @ http://localhost:3000/_next/static/chunks/a3375_next_dist_185d46ee._.js:3127
+[  623719ms] [WARNING] Image with src "/images/profile_photo_circular.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:3000/_next/static/chunks/a3375_next_dist_185d46ee._.js:2297
+[  626767ms] TypeError: Failed to construct 'Image': Please use the 'new' operator, this DOM object constructor cannot be called as a function.
+    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:14826:24)
+    at renderWithHooks (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:4651:24)
+    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:6112:21)
+    at beginWork (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:6708:24)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:965:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:9562:97)
+    at workLoopSync (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:9456:40)
+    at renderRootSync (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:9440:13)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:9068:186)
+    at performSyncWorkOnRoot (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:10238:9)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:10154:316)
+    at processRootScheduleInMicrotask (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:10175:106)
+    at http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:10249:158
+[  628336ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/en:0
+[  628599ms] TypeError: Failed to construct 'Image': Please use the 'new' operator, this DOM object constructor cannot be called as a function.
+    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:14826:24)
+    at renderWithHooks (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:4651:24)
+    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:6112:21)
+    at beginWork (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:6708:24)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:965:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:9562:97)
+    at workLoopSync (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:9456:40)
+    at renderRootSync (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:9440:13)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:9105:47)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_react-dom_cd79d76b._.js:10230:9)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/_next/static/chunks/a3375_next_dist_compiled_fd07512a._.js:2647:64)
+[  631634ms] [WARNING] The resource http://localhost:3000/_next/static/chunks/OneDrive_Documents_CLAUDEE_portfolio_app_globals_454974e8.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/en:0
+[  635124ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/en?_rsc=1adk8:0
+[  635201ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/en?_rsc=1adk8:0
+[  635302ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/en:0
+[  635450ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/favicon.ico?favicon.0b3bf435.ico:0
+[  649618ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/en?_rsc=kw9md:0
+[  649706ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/en:0
+[  729308ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/en:0
+[  806756ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/en?_rsc=1adk8:0
+[  806876ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/en?_rsc=1adk8:0
+[  806996ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/en:0
+[  859608ms] [WARNING] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior @ http://localhost:3000/_next/static/chunks/a3375_next_dist_185d46ee._.js:2297
