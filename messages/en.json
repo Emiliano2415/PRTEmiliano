@@ -1,0 +1,42 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Emiliano Arcos",
+    "title": "Industrial & Systems Engineering Student",
+    "subtitle": "Automation · Web Development · Data Analysis",
+    "cta_projects": "View projects",
+    "cta_cv": "Download CV"
+  },
+  "about": {
+    "title": "About me",
+    "description": "Industrial and Systems Engineering student at UAT with hands-on experience in process automation, data manipulation, and web-based dashboard development. Passionate about solving problems with clean, efficient code.",
+    "stats": {
+      "projects": "Projects",
+      "technologies": "Technologies",
+      "university": "University"
+    }
+  },
+  "skills": { "title": "Skills" },
+  "projects": { "title": "Projects", "view_code": "View code", "view_demo": "Demo" },
+  "experience": { "title": "Experience" },
+  "education": { "title": "Education", "expected": "Expected" },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a project in mind? Let's talk.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Failed to send. Please try again."
+  }
+}
