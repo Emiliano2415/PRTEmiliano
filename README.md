@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portafolio Web — Emiliano Arcos Ramirez
 
-## Getting Started
+> Personal portfolio website built with Next.js 14, Tailwind CSS, Framer Motion, and next-intl. Bilingual (ES/EN), dark mode by default.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Framework | Next.js 14 (App Router) |
+| Styles | Tailwind CSS |
+| Animations | Framer Motion |
+| i18n | next-intl (ES / EN) |
+| Contact | EmailJS |
+| Deploy | Vercel |
+
+---
+
+## 📑 Sections
+
+1. **Hero** — Name, title, profile photo, CTA buttons
+2. **About** — Short bio + stats
+3. **Skills** — Grid with icons by category (Frontend, Backend, Data, Tools)
+4. **Projects** — Cards with stack tags and links
+5. **Experience** — Vertical timeline
+6. **Education** — UAT card
+7. **Contact** — Social links + EmailJS form
+
+---
+
+## 🎨 Design
+
+- **Background:** `#0a0a0f` (deep black)
+- **Surface:** `#12121a`
+- **Primary accent:** `#7c3aed` (vibrant violet)
+- **Secondary accent:** `#06b6d4` (neon cyan)
+- **Headings:** Space Grotesk
+- **Body:** Inter
+
+---
+
+## 🗂️ Project Structure
+
+```
+/
+├── app/
+│   └── [locale]/
+│       ├── layout.tsx
+│       └── page.tsx
+├── components/
+│   ├── sections/       # Hero, About, Skills, Projects, Experience, Education, Contact
+│   ├── ui/             # Reusable buttons, badges, cards
+│   └── layout/         # Navbar, Footer
+├── messages/
+│   ├── es.json         # Spanish translations
+│   └── en.json         # English translations
+└── public/
+    └── images/         # Profile photo, project screenshots
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🤖 Development Approach
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses **3 parallel agents** for efficient development:
 
-## Learn More
+- **Agent 1 — UI/Layout:** Navbar, Hero, About, Education, Footer, i18n, dark theme
+- **Agent 2 — Dynamic Sections:** Skills, Projects, Experience, Framer Motion animations
+- **Agent 3 — Contact + Quality:** EmailJS form, accessibility, TypeScript strict, error review
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚡ Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+# Install dependencies
+npm install
 
-## Deploy on Vercel
+# Run development server
+npm run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Build for production
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🌐 Live
+
+> Deploy URL will be added after first Vercel deployment.
+
+---
+
+## 👤 About
+
+**Emiliano Arcos Ramirez**
+Industrial & Systems Engineering Student — UAT Tampico, Mexico
+[LinkedIn](https://linkedin.com/in/emiliano-arcos-ramirez-30bb563b1) · [GitHub](https://github.com/Emiliano2415)
